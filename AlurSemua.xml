@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="pdfngreport-properties" value="pdfngreport.properties" />
+	<listeners>
+		<listener class-name="com.uttesh.pdfngreport.PDFReportListener" />
+	</listeners>
+	<test name="inbox">
+		<classes>
+			<class name="com.klikbca.email.Inbox" />
+		</classes>
+	</test>
+	<test name="Outbox">
+		<classes>
+			<class name="com.klikbca.email.Outbox" />
+		</classes>
+	</test>
+	<test name="BeritaBaru">
+		<classes>
+			<class name="com.klikbca.email.BeritaBaruBerhasil" />
+		</classes>
+	</test>
+	<test name="BeritaBaruPerihalKosong">
+		<classes>
+			<class name="com.klikbca.email.BeritaBaruPerihalKosong" />
+		</classes>
+	</test>
+	<test name="BeritaBaruPerihalKosong">
+		<classes>
+			<class name="com.klikbca.email.BeritaBaruPerihalKosong" />
+		</classes>
+	</test>
+
+	<!-- estatment -->
+
+	<test name="EstatmentTabungandanGiro">
+		<classes>
+			<class name="com.klikbca.estatment.TabunganDanGiro" />
+		</classes>
+	</test>
+	<test name="EstatmentTahapanBerjangka">
+		<classes>
+			<class name="com.klikbca.estatment.TahapanBerjangka" />
+		</classes>
+	</test>
+
+	<!-- Histori Transaksi -->
+	<test name="HistoriTransaksiHariIniSemuaTransasksi">
+		<classes>
+			<class name="com.klikbca.historitransaksi.HariIniSemuaTransasksi" />
+		</classes>
+	</test>
+	<test name="HistoriTransaksiHariIniJenisTransasksiPembelian">
+		<classes>
+			<class name="com.klikbca.historitransaksi.HariIniJenisTransasksiPembelian" />
+		</classes>
+	</test>
+	<test name="HistoriTransaksiHistori31Feb">
+		<classes>
+			<class name="com.klikbca.historitransaksi.Histori31Feb" />
+		</classes>
+	</test>
+	
+<!-- Informasi Kartu Kredit -->
+	<test name="InformasiSaldoBerhasil">
+		<classes>
+			<class name="com.klikbca.informasikartukredit.InformasiSaldoBerhasil" />
+		</classes>
+	</test>
+	<test name="TagihanBerhasil">
+		<classes>
+			<class name="com.klikbca.informasikartukredit.TagihanBerhasil" />
+		</classes>
+	</test>
+	<test name="TransaksiBerhasil">
+		<classes>
+			<class name="com.klikbca.informasikartukredit.TransaksiBerhasil" />
+		</classes>
+	</test>
+	
+<!-- Informasi Kurs -->
+	<test name="InformasiKurs">
+		<classes>
+			<class name="com.klikbca.informasilainya.InformasiKurs" />
+		</classes>
+	</test>
+
+<!-- Informasi Rekening -->
+	<test name="InformasiSaldo">
+		<classes>
+			<class name="com.klikbca.informasirekening.InformasiSaldoSukses" />
+		</classes>
+	</test>
+	<test name="MutasiHarian31Februari">
+		<classes>
+			<class name="com.klikbca.informasirekening.MutasiHarian31Februari" />
+		</classes>
+	</test>
+	
+	<test name="MutasiRekeningBulanan">
+		<classes>
+			<class name="com.klikbca.informasirekening.MutasiRekeningBulanan" />
+		</classes>
+	</test>
+	
+	<test name="MutasiRekeningBulananBulanSebelumnya">
+		<classes>
+			<class name="com.klikbca.informasirekening.MutasiRekeningBulananBulanSebelumnya" />
+		</classes>
+	</test>
+	
+	<test name="MutasiRekeningHariIni">
+		<classes>
+			<class name="com.klikbca.informasirekening.MutasiRekeningHariIni" />
+		</classes>
+	</test>
+
+<!-- Login -->
+	<test name="LoginPinAlphabet">
+		<classes>
+			<class name="com.klikbca.login.LoginPinAlphabet" />
+		</classes>
+	</test>
+	<test name="LoginPinKurangDari6">
+		<classes>
+			<class name="com.klikbca.login.LoginPinKurangDari6" />
+		</classes>
+	</test>
+	
+	<test name="LoginSukses">
+		<classes>
+			<class name="com.klikbca.login.LoginSukses" />
+		</classes>
+	</test>
+	
+	<test name="LoginTanpaPin">
+		<classes>
+			<class name="com.klikbca.login.LoginTanpaPin" />
+		</classes>
+	</test>
+	
+	<test name="LoginTanpaUsername">
+		<classes>
+			<class name="com.klikbca.login.LoginTanpaUsername" />
+		</classes>
+	</test>
+	
+	<test name="LoginUsernamehanyaAlphabet">
+		<classes>
+			<class name="com.klikbca.login.LoginUsernamehanyaAlphabet" />
+		</classes>
+	</test>
+	
+	<test name="LoginUserNameHanyaNumerik">
+		<classes>
+			<class name="com.klikbca.login.LoginUserNameHanyaNumerik" />
+		</classes>
+	</test>
+	
+	<test name="Logout">
+		<classes>
+			<class name="com.klikbca.login.Logout" />
+		</classes>
+	</test>
+	
+<!-- StatusTransaksi -->
+	<test name="JenisTransaksiTransferKeBCAStatusTertunda">
+		<classes>
+			<class name="com.klikbca.statustransaksi.LoginPinAlphabet" />
+		</classes>
+	</test>
+	<test name="SemuaPertransaksiDibuat">
+		<classes>
+			<class name="com.klikbca.statustransaksi.SemuaPertransaksiDibuat" />
+		</classes>
+	</test>
+	<test name="SemuaPertransaksiDibuatPertanggal31FebruariSampaiSekarang">
+		<classes>
+			<class name="com.klikbca.statustransaksi.SemuaPertransaksiDibuatPertanggal31FebruariSampaiSekarang" />
+		</classes>
+	</test>
+
+
+
+
+
+<!-- Administrasi -->
+	<test name="GantiPinKolomPinBaruKosong">
+		<classes>
+			<class name="com.klikbca.administrasi.GantiPinKolomPinBaruKosong" />
+		</classes>
+	</test>
+	<test name="LoginPinAHapusDaftarTransferlphabet">
+		<classes>
+			<class name="com.klikbca.administrasi.HapusDaftarTransfer" />
+		</classes>
+	</test>
+	<test name="UbahBahasa">
+		<classes>
+			<class name="com.klikbca.administrasi.UbahBahasa" />
+		</classes>
+	</test>
+	<test name="GantiPin">
+		<classes>
+			<class name="com.klikbca.administrasi.GantiPin" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
+  
